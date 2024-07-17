@@ -1,0 +1,20 @@
+<head>
+  <title>board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1>Welcome to Board!</h1>
+
+  {{> board}}
+</body>
+
+<template name="board">
+  <input id="inputPost" type="text">
+  
+  {{#each posts}}
+    <div>{{content}}</div>
+  {{/each}}
+</template>
+
+
